@@ -4,7 +4,7 @@ const path = require("path");
 const fs = require("fs");
 
 const ajv = new Ajv({ allErrors: true });
-addFormats(ajv); // ✅ Enables "email", "date-time", "uri", etc.
+addFormats(ajv);
 
 const validatorsCache = {};
 
