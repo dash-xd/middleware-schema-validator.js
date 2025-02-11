@@ -78,7 +78,7 @@ const schemaValidator = async (req, res, next) => {
                 console.error("[Schema Validator] Validation failed:", validationError);
                 return res.status(400).json(validationError);
             }
-            console.log("[Schema Validator] Validating against OpenAPI spec...");
+            console.log("[Schema Validator] Validated against OpenAPI spec.");
         }
 
         next();
